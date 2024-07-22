@@ -4,6 +4,7 @@ import AddSubscribersPage from './components/AddSubscribersPage';
 import SearchSubscribers from './components/SearchSubscribers';
 import DeleteSubscriber from './components/DeleteSubscriber';
 import ViewAllSubscribers from './components/ViewAllSubscribers';
+import SubscriberNavbar from './components/SubscriberNavbar';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <SearchSubscribers/>
      <DeleteSubscriber/>
      <ViewAllSubscribers/>
+     <SubscriberNavbar/>
      
     </div>
   );
