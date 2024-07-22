@@ -1,8 +1,10 @@
 import React from 'react'
+import SubscriberNavbar from './SubscriberNavbar'
 
 const ViewAllSubscribers = () => {
   return (
     <div>
+        <SubscriberNavbar/>
 
 <table class="table">
   <thead>

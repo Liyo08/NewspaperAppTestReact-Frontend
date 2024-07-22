@@ -5,15 +5,20 @@ import SearchSubscribers from './components/SearchSubscribers';
 import DeleteSubscriber from './components/DeleteSubscriber';
 import ViewAllSubscribers from './components/ViewAllSubscribers';
 import SubscriberNavbar from './components/SubscriberNavbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-     <AddSubscribersPage/>
-     <SearchSubscribers/>
-     <DeleteSubscriber/>
-     <ViewAllSubscribers/>
-     <SubscriberNavbar/>
+    <BrowserRouter>
+    <Routes>
+<Route path='/' element={<AddSubscribersPage/>}/>
+<Route path='/search' element={<SearchSubscribers/>}/>
+<Route path='/delete' element={<DeleteSubscriber/>}/>
+<Route path='/view' element={<ViewAllSubscribers/>}/>
+
+    </Routes>
+    </BrowserRouter>
      
     </div>
   );

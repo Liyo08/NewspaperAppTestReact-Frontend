@@ -1,8 +1,10 @@
 import React from 'react'
+import SubscriberNavbar from './SubscriberNavbar'
 
 const AddSubscribersPage = () => {
   return (
     <div>
+        <SubscriberNavbar/>
 
 <div className="container">
     <div className="row">
